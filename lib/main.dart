@@ -19,22 +19,35 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Center(
-        child: Row(
-          children: <Widget>[
-            Expanded(
+    return Center(
+      child: Row(
+        children: <Widget>[
+          SizedBox(
+            width: 5.0,
+          ),
+          Expanded(
+            child: FlatButton(
+              onPressed: () {
+                print('Button Clicked');
+              },
               child: Image.asset('images/dice1.png'),
             ),
-            SizedBox(
-              width: 5.0,
-            ),
-            Expanded(
+          ),
+          SizedBox(
+            width: 5.0,
+          ),
+          Expanded(
+            child: FlatButton(
+                onPressed: () {
+                print('Button Clicked');
+              },
               child: Image.asset('images/dice1.png'),
             ),
-          ],
-        ),
+          ),
+          SizedBox(
+            width: 5.0,
+          ),
+        ],
       ),
     );
   }
