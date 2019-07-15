@@ -22,9 +22,6 @@ class DicePage extends StatelessWidget {
     return Center(
       child: Row(
         children: <Widget>[
-          SizedBox(
-            width: 5.0,
-          ),
           Expanded(
             child: FlatButton(
               onPressed: () {
@@ -32,9 +29,6 @@ class DicePage extends StatelessWidget {
               },
               child: Image.asset('images/dice1.png'),
             ),
-          ),
-          SizedBox(
-            width: 5.0,
           ),
           Expanded(
             child: FlatButton(
@@ -44,9 +38,7 @@ class DicePage extends StatelessWidget {
               child: Image.asset('images/dice1.png'),
             ),
           ),
-          SizedBox(
-            width: 5.0,
-          ),
+
         ],
       ),
     );
